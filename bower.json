@@ -1,0 +1,24 @@
+{
+  "name": "comienza",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.4.0",
+    "angular-route": "^1.4.0",
+    "waypoints": "~4.0.0",
+    "bootstrap": "v4.0.0-alpha.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "public",
+  "moduleName": "comienzaApp",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}
