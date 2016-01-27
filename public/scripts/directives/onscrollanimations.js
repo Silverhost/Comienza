@@ -10,7 +10,7 @@ angular.module('comienzaApp')
   .directive('onScrollAnimations', function () {
     return {
       restrict: 'E',
-      link: function scrollAnimations(scope, element, attrs) {
+      link: function () {
         $('.wp-1').waypoint(function() {
           $('.wp-1').addClass('animated fadeInUp');
         }, {

@@ -4,10 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Silverhost</title>
+    <title>Comienza a vender por internet | Silverhost</title>
     <meta name="description" content="Desarrollo sitios web corporativo y tienda online" />
     <meta name="keywords" content="pagina web, desarrollo, diseño" />
     <meta name="author" content="Silverhost" />
+    <!-- start: Open Graph -->
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Comienza a vender por internet | Silverhost" />
+    <meta property="og:description" content="Hoy es imperativo tener un sitio web moderno, que te facilite la tarea de vender, en Silverhost pensamos en ti y te damos esta excelente oferta!" />
+    <meta property="og:url" content="https://comienza.silverhost.cl/" />
+    <meta property="og:site_name" content="Silverhost.cl" />
+    <meta property="og:image" content="http://comienza.silverhost.cl/images/share_facebook.jpg" />
+    <!-- end: Open Graph -->
     <meta name="msapplication-TileColor" content="#2A3C46" />
     <meta name="theme-color" content="#2A3C46" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
@@ -16,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="styles/timeline.css" />
     <link rel="stylesheet" type="text/css" href="styles/landio.css" />
     <link rel="stylesheet" type="text/css" href="styles/simpletextrotator.css" />
+    <link rel="stylesheet" type="text/css" href="styles/validationEngine.jquery.css" />
     <script src="scripts/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body ng-app="comienzaApp">
@@ -45,53 +55,8 @@
         </div>
       </div>
     </nav>
-    
-    <div ng-view="" autoscroll="true"></div>
-  
-    <section id="cotizar" class="section-signup bg-faded">
-      <div class="container">
-        <form>
-          <div class="row">
-            <div class="col-md-3">
-              <img src="images/pj-contacto.jpg" alt="personaje contacto" width="250" />
-            </div>
-            <div class="col-md-9">
-            <h3 class="m-b-lg">Déjanos tus datos y te llamaremos</h3>
-              <form>
-                <div class="row">
-                  <div class="col-md-4">
-                    <fieldset class="form-group">
-                    <label for="NombreForm"><i class="fa fa-user"></i> Nombre</label>
-                    <input type="text" class="form-control" id="NombreForm" placeholder="Ingresar Nombre" />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-4">
-                    <fieldset class="form-group">
-                    <label for="EmailForm"><i class="fa fa-envelope"></i> Correo electrónico</label>
-                    <input type="email" class="form-control" id="EmailForm" placeholder="Ingresar Correo" />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-4">
-                    <fieldset class="form-group">
-                    <label for="TelefonoForm"><i class="fa fa-phone"></i> Teléfono</label>
-                    <input type="text" class="form-control" id="TelefonoForm" placeholder="Ingresar Teléfono" />
-                    </fieldset>
-                  </div>
-                </div>
 
-                <fieldset class="form-group">
-                  <label for="exampleTextarea"><i class="fa fa-commenting"></i> Mensaje</label>
-                  <textarea class="form-control" id="MensajeForm" rows="3"></textarea>
-                </fieldset>
-                <div class="col-md-12">
-                  <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Solicitar Contacto</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
+    <div ng-view="" autoscroll="true"></div>
 
 
     <section class="section-llamado text-center llamado" style="background:url(images/bg.jpg)">
@@ -100,7 +65,7 @@
         <h4 class="display-3"><strong class="colorear">(02) 2898 6041</strong></h4>
         <div class="divider-inner bot40 top40"></div>
         <h5 class="display-6 letra-blanca">Agenda tu reunión y ven a nuestra oficina en</h5>
-        <h4 class="letra-blanca">Av. Las Condes 7700, Las Condes,
+        <h4 class="letra-blanca">Av. Los Conquistadores 2782, Providencia,
     Santiago, Chile.</h4>
       </div>
     </section>
@@ -140,10 +105,13 @@
     <script src="bower_components/angular-scroll/angular-scroll.js"></script>
 
     <!-- <script src="scripts/vendor/landio.min.js"></script> -->
-    <script src="scripts/main.js"></script>
+
     <script src="scripts/vendor/classie.js"></script>
     <script src="scripts/vendor/jquery.simple-text-rotator.js"></script>
     <script src="scripts/vendor/TweenMax.min.js"></script>
+    <script src="scripts/vendor/jquery.validationEngine-es.js"></script>
+    <script src="scripts/vendor/jquery.validationEngine.js"></script>
+    <script src="scripts/main.js"></script>
 
     <!-- build:js({.tmp,public}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
@@ -154,6 +122,7 @@
     <script src="scripts/directives/autoactive.js"></script>
     <script src="scripts/directives/onscrollanimations.js"></script>
     <script src="scripts/directives/timeline.js"></script>
+    <script src="scripts/directives/validatesendform.js"></script>
     <!-- endbuild -->
 
     <script type="text/javascript">

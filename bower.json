@@ -5,7 +5,7 @@
     "angular": "^1.4.0",
     "angular-route": "^1.4.0",
     "waypoints": "~4.0.0",
-    "bootstrap": "v4.0.0-alpha.2"
+    "bootstrap": "v4.0.0-alpha"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"

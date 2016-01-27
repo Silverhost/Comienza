@@ -10,7 +10,7 @@ angular.module('comienzaApp')
   .directive('textRotator', function () {
     return {
       restrict: 'A',
-      link: function (scope, element, attr) {
+      link: function () {
         $('.rotate').textrotator({
           animation: 'flipUp',
           speed: 4000

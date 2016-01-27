@@ -1,0 +1,44 @@
+    <validate-send-form></validate-send-form>
+    <section id="cotizar" class="section-signup bg-faded">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="images/pj-contacto.jpg" alt="personaje contacto" width="250" />
+          </div>
+          <div class="col-md-9">
+          <h3 class="m-b-lg">Déjanos tus datos y te llamaremos</h3>
+            <form name="form_quote" id="form_quote" action="#" method="post">
+              <input type="hidden" ng-model="product" id="product" name="product" value="{{product}}" />
+              <div class="row">
+                <div class="col-md-4">
+                  <fieldset class="form-group">
+                    <label for="name"><i class="fa fa-user"></i> Nombre</label>
+                    <input type="text" class="form-control validate[required]" name="name" id="name" placeholder="Ingresar Nombre" />
+                  </fieldset>
+                </div>
+                <div class="col-md-4">
+                  <fieldset class="form-group">
+                    <label for="email"><i class="fa fa-envelope"></i> Correo electrónico</label>
+                    <input type="email" class="form-control validate[required,custom[email]]" name="email" id="email" placeholder="Ingresar Correo" />
+                  </fieldset>
+                </div>
+                <div class="col-md-4">
+                  <fieldset class="form-group">
+                    <label for="phone"><i class="fa fa-phone"></i> Teléfono</label>
+                    <input type="text" class="form-control validate[required]" name="phone" id="phone" placeholder="Ingresar Teléfono" />
+                  </fieldset>
+                </div>
+              </div>
+
+              <fieldset class="form-group">
+                <label for="message"><i class="fa fa-commenting"></i> Mensaje</label>
+                <textarea class="form-control validate[required]" name="message" id="message" rows="3"></textarea>
+              </fieldset>
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Solicitar Contacto</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>

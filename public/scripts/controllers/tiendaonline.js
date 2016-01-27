@@ -8,10 +8,6 @@
  * Controller of the comienzaApp
  */
 angular.module('comienzaApp')
-  .controller('TiendaonlineCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('TiendaonlineCtrl', function ($scope) {
+    $scope.product = 'Tienda Online';
   });
